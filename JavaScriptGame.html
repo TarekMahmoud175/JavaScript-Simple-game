@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <title>JavaScript Game</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" type="text/css" href="css/master.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container" id="firstContainer">
+    <div class="row">
+      <div class="col-md-12 ">
+        <div class="card-header"><h2>Let's Enjoy Our Game</h2></div>
+        <div class="card-block">
+          <form>
+            <div class="form-group">
+              <label for="x">Rows :</label>
+              <input type="number" name="x" id="x" class="form-control" autocomplete="off" placeholder="rows">
+              <p class="text-danger"></p>
+            </div>
+            <div class="form-group">
+              <label for="y">Columns :</label>
+              <input type="number" name="y" id="y" class="form-control" autocomplete="off" placeholder="cols">
+              <p class="text-danger"></p>
+            </div>
+            <div class="form-group">
+              <button type="submit" onClick="createTable(x,y)"class="btn btn-outline-success">Create</button>
+            </div>
+            <div>
+              <input type="radio" name="change" id="click" value="click" checked><label for="click">change by click</label>
+              <input type="radio" name="change" id="hover" value="hover"><label for="hover">change by hover</label>
+            </div>
+          </form>
+          <div id="txt">
+            <p class="text-capitalize text-success" id="mytxt"></p>
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" id="table">
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/myEffects.js"></script>
+  <script type="text/javascript" src="js/master.js"></script>
+</body>
+</html>
